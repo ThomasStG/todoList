@@ -1,0 +1,13 @@
+<div class="timer">
+    <p>{{time}}</p>
+    <div class="inputs">
+        <input type="number" id="hours" value="0" min="0" max="23"/> :
+        <input type="number" id="minutes" value="0" min="0" max="59"/> :
+        <input type="number" id="seconds" value="2" min="0" max="59"/>
+    </div>
+    <button type="button" (click)="setTimerFromInput()">Reset</button>
+    <select name="alarms" id="alarms">
+        <option value="../../assets/alarmClock.mp3">Alarm Clock</option>
+        <option value="../../assets/alarmBell.mp3">Industrial Bell</option>
+      </select>
+</div>

@@ -1,7 +1,13 @@
 Timer
   Pomodoro?
+  Talk to expert (C)
 Reminder
-
+  Easy to make with definite stop
+  Yells at you when you don't mark as complete
 Schedule
+  visual
 Todo List
-
+  Satisfying to complete a task
+  subtasks
+  multiple types of tasks (Project types [home, work, school])
+  Front and center

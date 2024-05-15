@@ -1,0 +1,28 @@
+input {
+    border-radius: 5px;
+}
+
+.timer{
+    width:30vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer > *{
+    margin-bottom: 15px;
+}
+.timer > button{
+    width: 9vw;
+    border-radius: 5px;
+    height: 3vh;
+}
+p {
+    width: 25vw;
+    height:auto;
+    color:#990099;
+    font-size:xx-large;
+    font-weight: bold;
+    text-align: center;
+}

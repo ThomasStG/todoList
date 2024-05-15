@@ -1,0 +1,9 @@
+<head>
+  <title>todoApp</title>
+</head>
+<navbar></navbar>
+<div style="display: flex">
+  <timer></timer>
+  <div>{% for reminder in reminders %}<reminder></reminder>{%endif%}</div>
+  <div>{% for item in todo%}<todo></todo>{%endif%}</div>
+</div>
