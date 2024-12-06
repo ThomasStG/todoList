@@ -1,0 +1,9 @@
+.item{
+    border-radius: 12px;
+    border: green 2px solid;
+    height: 4rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

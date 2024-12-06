@@ -1,0 +1,23 @@
+.timeline-container {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+}
+
+.time {
+    text-align: right;
+    padding-right: 10px;
+    align-self: start;
+}
+
+.timeline {
+    white-space: pre;
+}
+
+.event {
+    padding-left: 10px;
+    align-self: start;
+}
+
+.timeline-span {
+    grid-row: span 3; /* Adjust the span value as needed */
+}

@@ -18,12 +18,16 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "@npmcli/package-json": "^5.1.1",
+    "angular-cd-timer": "^3.0.0",
+    "lru-cache": "^10.2.2",
+    "pg-promise": "^11.6.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.5",
+    "@angular-devkit/build-angular": "github:angular/angular-devkit-build-angular-builds#cf42e6ade83e480cd29b8eba43f8daaf76367b4c",
     "@angular/cli": "^17.3.5",
     "@angular/compiler-cli": "^17.3.0",
     "@types/jasmine": "~5.1.0",

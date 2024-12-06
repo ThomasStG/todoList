@@ -1,0 +1,9 @@
+
+<div *ngFor="let item of todo_items; let i = index" class="timeline-container">
+    <div class="time">{{ i }} pm</div>
+    <div class="timeline">&#9568;&#9552;&#9552;&#9;</div>
+    <div class="event timeline-span"><app-todoitem [time]="item.time"></app-todoitem></div>
+    <div class="time"></div>
+    <div class="timeline" style="height:38px;">&#9553;<br/>&#9553;</div>
+</div>
+

@@ -1,0 +1,8 @@
+<div>
+    <ul>
+        <ng-template ngFor let-item [ngForOf]="todo_items" let-i="index">
+            <li><app-todoitem name="item.name"></app-todoitem></li>
+            {{i}}
+        </ng-template>
+    </ul>
+</div>

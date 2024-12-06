@@ -1,13 +1,50 @@
 <div class="timer">
     <p>{{time}}</p>
     <div class="inputs">
-        <input type="number" id="hours" value="0" min="0" max="23"/> :
-        <input type="number" id="minutes" value="0" min="0" max="59"/> :
-        <input type="number" id="seconds" value="2" min="0" max="59"/>
+      <input type="text" pattern="[0-9]" id="timeInput" maxlength="6" [(ngModel)]="input" (ngModelChange)="formatTime()" placeholder="HH:MM"/>:<input type="number" maxlength="3" placeholder="SS"/>
+  <br><input type="number" id="hours" placeholder="HH"/>:<input type="number" id="minutes" placeholder="MM"/>:<input type="number" id="seconds" placeholder="SS"/>
+<br/><label>Hour</label>
+<input
+  type="text"
+  [libAutoTab]="0"
+  [(ngModel)]="hour"
+  maxlength="2"
+  name="hour"
+  class="form-control"
+  required
+/>    
+<input
+  type="text"
+  [libAutoTab]="1"
+  [(ngModel)]="second"
+  maxlength="2"
+  name="second"
+  class="form-control"
+  required
+/>    
+</div>
+    <div>
+        <button type="button" (click)="setTimerFromInput()">Set</button>
+        <button type="button" (click)="restartTimer()">Reset</button>
     </div>
-    <button type="button" (click)="setTimerFromInput()">Reset</button>
+    <div *ngIf="seconds != 0">
+        <button type="button" (click)="timerPause()">Stop</button>
+        <button type="button" (click)="timerResume()">Start</button>
+    </div>
+    
     <select name="alarms" id="alarms">
+        <option value="">Silent</option>
         <option value="../../assets/alarmClock.mp3">Alarm Clock</option>
         <option value="../../assets/alarmBell.mp3">Industrial Bell</option>
       </select>
+    <progress value={{seconds}} max={{time_start}}></progress>
+    <svg width="50" height="50" viewBox="0 0 250 250" style="border-radius:50%">
+        <circle class="bg"
+          cx="125" cy="125" r="115" fill="none" stroke="#ddd" stroke-width="300"
+        ></circle>
+        <circle class="fg"
+          cx="125" cy="125" r="115" fill="none" stroke="#5394fd" stroke-width="250"
+          [attr.stroke-dasharray]="getDashArray()" stroke-dashoffset="0"
+        ></circle>
+    </svg>
 </div>

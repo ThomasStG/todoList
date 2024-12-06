@@ -1,3 +1,7 @@
 .timer-container{
     width: 30vw;
 }
+
+body{
+    display: flex;
+}
